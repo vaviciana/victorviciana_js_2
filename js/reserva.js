@@ -182,6 +182,7 @@ boton.addEventListener("click", () => {
                 fecha: fechaSeleccionada
             };
             cartReservas.push(reserva);
+            localStorage.setItem("carritoReservas", JSON.stringify(cartReservas));
             renderizarCarrito(); 
         });
     }
