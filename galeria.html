@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/style.css">
+    <script defer src="js/galeria.js"></script>
+</head>
+<body>
+    <div class="d-flex flex-column align-items-center m-3">
+        <h1>
+            Galería
+        </h1>
+        <!-- Filtro -->
+        <div class="d-flex align-items-center justify-content-center gap-2 w-100">
+            <!-- Lupa -->
+            <input type="text" id="buscar">
+            <button id="botonBuscar" class="btn btn-primary">Buscar</button>
+        </div>
+        <div class="d-flex flex-column">
+            <!-- Checks para hacer los filtros-->
+            <div class="d-flex flex-column gap-2">
+                <div class="d-flex flex-column" id="Localizacion">
+                    <h2>
+                        Localización
+                    </h2>
+                    <div class="gap-3">
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="Andalucia" value="Andalucía">
+                            <label for="Andalucia">Andalucía</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="Valencia" value="Valencia">
+                            <label for="Valencia">Valencia</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="Canarias" value="Canarias">
+                            <label for="Canarias">Canarias</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column" id="Regimen">
+                    <h2>
+                        Regimen
+                    </h2>
+                    <div class="gap-3">
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="DesayunoIncluido" value="Desayuno">
+                            <label for="DesayunoIncluido">Desayuno incluido</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="MediaPension" value="Media Pensión">
+                            <label for="MediaPension">Media Pensión</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="PensionCompleta" value="Pensión Completa">
+                            <label for="PensionCompleta">Pensión completa</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-column" id="Parking">
+                    <h2>
+                        Parking
+                    </h2>
+                    <div class="gap-3">
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="Si" value="Si">
+                            <label for="Si">Si</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="No" value="No">
+                            <label for="No">No</label>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <button id="Filtrar" class="btn btn-primary">Filtrar</button>
+        </div>
+    </div>
+    <div class="m-3" id="listaResultados"></div>
+    <div class="m-3" id="listaResultadosFiltro"></div> 
+</body>
+</html>

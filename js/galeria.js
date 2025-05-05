@@ -1,0 +1,234 @@
+// ARRAY CON LOS OBJETOS DE LOS HOTELES
+const Hoteles = [
+    {
+        id: "1",
+        Nombre: "Málaga",
+        Imagen: "recursos/1.jpg",
+        Descripcion: "Vive la esencia del sur en nuestro hotel de Málaga, ideal para quienes buscan playa, cultura y buena gastronomía. Con régimen de media pensión y ubicado en plena Andalucía, ofrece la comodidad de contar con parking para que te muevas sin preocupaciones.",
+        Localizacion: "Andalucía",
+        Régimen: "Media Pensión",
+        Parking: "Si",
+        PrecioNoche: "100€",
+        diasReservados: ["2025-02-02", "2025-08-04"],
+    },
+    {
+        id: "2",
+        Nombre: "Córdoba",
+        Imagen: "recursos/2.jpg",
+        Descripcion: "Sumérgete en la historia y encanto de Córdoba alojándote en un hotel acogedor y bien ubicado. Con desayuno incluido y parking disponible, es la opción perfecta para explorar la ciudad con total libertad y comenzar cada día con energía.",
+        Localizacion: "Andalucía",
+        Régimen: "Desayuno",
+        Parking: "Si",
+        PrecioNoche: "120€",
+        diasReservados: ["2025-08-06", "2025-09-14"],
+    },
+    {
+        id: "3",
+        Nombre: "Sevilla",
+        Imagen: "recursos/3.jpg",
+        Descripcion: "Disfruta de una estancia cómoda y bien ubicada en nuestro hotel de Sevilla, ideal tanto para escapadas de ocio como para viajes de trabajo. Con un régimen de desayuno y situado en el corazón de Andalucía, este alojamiento ofrece una excelente relación calidad-precio. Aunque no dispone de parking, su entorno y accesibilidad te permitirán aprovechar al máximo tu visita.",
+        Localizacion: "Andalucía",
+        Régimen: "Desayuno",
+        Parking: "No",
+        PrecioNoche: "80€",
+        diasReservados: ["2025-12-12", "2025-02-14"],
+    },
+    {
+        id: "4",
+        Nombre: "Castellon",
+        Imagen: "recursos/4.jpg",
+        Descripcion: "Vive una experiencia completa en nuestro hotel de Castellón, perfecto para quienes desean combinar descanso y gastronomía. Ubicado en la Comunidad Valenciana y con régimen de media pensión, es ideal para relajarte tras explorar la ciudad. No cuenta con parking, pero su excelente ubicación lo compensa con creces.",
+        Localizacion: "Valencia",
+        Régimen: "Media Pensión",
+        Parking: "No",
+        PrecioNoche: "50€",
+        diasReservados: ["2025-06-21", "2025-08-14"],
+    },
+    {
+        id: "5",
+        Nombre: "Alicante",
+        Imagen: "recursos/5.jpg",
+        Descripcion: "Ideal para escapadas al Mediterráneo, el hotel de Alicante te ofrece comodidad y cercanía al mar con un régimen de desayuno incluido. Situado en la Comunidad Valenciana, es una opción práctica para quienes buscan explorar la costa sin complicaciones. No dispone de parking.",
+        Localizacion: "Valencia",
+        Régimen: "Desayuno",
+        Parking: "No",
+        PrecioNoche: "60€",
+        diasReservados: ["2025-02-12", "2025-08-04"],
+    },
+    {
+        id: "6",
+        Nombre: "Benidorm",
+        Imagen: "recursos/6.jpg",
+        Descripcion: "Disfruta del ambiente vibrante de Benidorm desde nuestro hotel con desayuno incluido. Ubicado en la Comunidad Valenciana, es perfecto para unas vacaciones al sol o un descanso frente al mar. No dispone de parking, pero su localización lo convierte en un punto estratégico para tu viaje.",
+        Localizacion: "Valencia",
+        Régimen: "Desayuno",
+        Parking: "No",
+        PrecioNoche: "75€",
+        diasReservados: ["2025-11-12", "2025-07-08"],
+    },
+    {
+        id: "7",
+        Nombre: "Fuerteventura",
+        Imagen: "recursos/7.jpg",
+        Descripcion: "Escápate al paraíso con nuestro hotel en Fuerteventura, ideal para disfrutar de las playas y el clima de Canarias. Con régimen de desayuno, es perfecto para comenzar el día con energía. No cuenta con parking, aunque su entorno natural y ubicación privilegiada te conquistarán.",
+        Localizacion: "Canarias",
+        Régimen: "Desayuno",
+        Parking: "No",
+        PrecioNoche: "150€",
+        diasReservados: ["2025-04-12", "2025-07-25"],
+    },
+    {
+        id: "8",
+        Nombre: "Tenerife",
+        Imagen: "recursos/8.jpg",
+        Descripcion: "Sumérgete en la magia de Tenerife desde nuestro hotel con pensión completa. Ubicado en las Islas Canarias y con parking disponible, te ofrece comodidad y todos los servicios para que no tengas que preocuparte por nada durante tu estancia.",
+        Localizacion: "Canarias",
+        Régimen: "Pensión Completa",
+        Parking: "Si",
+        PrecioNoche: "100€",
+        diasReservados: ["2025-03-18", "2025-04-13"],
+    },
+    {
+        id: "9",
+        Nombre: "Gran Canaria",
+        Imagen: "recursos/9.jpg",
+        Descripcion: "Descubre el encanto de Gran Canaria desde un alojamiento cómodo y bien equipado. Con media pensión y parking incluido, este hotel te permite disfrutar de las maravillas de Canarias con total tranquilidad y sin preocupaciones logísticas.",
+        Localizacion: "Canarias",
+        Régimen: "Media Pensión",
+        Parking: "Si",
+        PrecioNoche: "80€",
+        diasReservados: ["2025-02-23", "2025-04-28"],
+    },
+    {
+        id: "10",
+        Nombre: "Lanzarote",
+        Imagen: "recursos/10.jpg",
+        Descripcion: "Déjate cautivar por los paisajes volcánicos de Lanzarote desde nuestro hotel con pensión completa. Perfecto para una estancia sin estrés, incluye parking para tu comodidad y una ubicación inmejorable para recorrer la isla.",
+        Localizacion: "Canarias",
+        Régimen: "Pensión Completa",
+        Parking: "Si",
+        PrecioNoche: "120€",
+        diasReservados: ["2025-05-17", "2025-09-23"],
+    }
+];
+
+
+//BUSCADOR
+const busqueda = document.getElementById('buscar');
+const botonBuscar = document.getElementById('botonBuscar');
+const listaResultados = document.getElementById('listaResultados');
+
+botonBuscar.addEventListener('click', () => {
+    const termino = busqueda.value;
+
+    const resultado = Hoteles.filter(hotel => hotel.Nombre.includes(termino));
+
+    resultado.forEach(hotel => {
+        const card = document.createElement("div");
+        card.innerHTML = `
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src=${hotel.Imagen} class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">${hotel.Nombre}</h5>
+                            <p class="card-text">${hotel.Descripcion}</p>
+                            <div class="d-flex flex-column">
+                                <p><b>Características</b></p>
+                                <div class="d-flex flex-row flex-wrap gap-3 justify-content-center">
+                                    <div class="d-flex">
+                                        <p>Localización:</p>
+                                        <p>${hotel.Localizacion}</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p>Régimen:</p>
+                                        <p>${hotel.Régimen}</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p>Parking:</p>
+                                        <p>${hotel.Parking}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center"><p><b>Precio Noche:${hotel.PrecioNoche}</b></p></div>
+                            <div class="btn btn-primary w-100 hotelAgregar" id="${hotel.id}">Reservar</div>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+        listaResultados.appendChild(card);
+    });
+});
+
+//FILTRO
+const botonFiltrar = document.getElementById('Filtrar');
+
+botonFiltrar.addEventListener('click', () => {
+listaResultados.innerHTML = "";
+
+const filtroLocalizacion = document.querySelectorAll('#Localizacion input[type="checkbox"]:checked');
+const filtroRegimen = document.querySelectorAll('#Regimen input[type="checkbox"]:checked');
+const filtroParking = document.querySelectorAll('#Parking input[type="checkbox"]:checked');
+
+const matchLocalizacion = Array.from(filtroLocalizacion).map(input => input.value);
+const matchRegimen = Array.from(filtroRegimen).map(input => input.value);
+const matchParking = Array.from(filtroParking).map(input => input.value);
+
+const resultadoFiltro = Hoteles.filter(hotel => {
+    const coincideLocalizacion = matchLocalizacion.length === 0 || matchLocalizacion.includes(hotel.Localizacion);
+    const coincideRegimen = matchRegimen.length === 0 || matchRegimen.includes(hotel.Régimen);
+    const coincideParking = matchParking.length === 0 || matchParking.includes(hotel.Parking);
+    return coincideLocalizacion && coincideRegimen && coincideParking;
+});
+
+resultadoFiltro.forEach(hotel => {
+    const cardFiltro = document.createElement("div");
+    cardFiltro.innerHTML = `
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+            <div class="col-md-4">
+                <img src=${hotel.Imagen} class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                <h5 class="card-title">${hotel.Nombre}</h5>
+                <p class="card-text">${hotel.Descripcion}</p>
+                <div class="d-flex flex-column">
+                    <p><b>Características</b></p>
+                    <div class="d-flex flex-row flex-wrap gap-3 justify-content-center">
+                    <div class="d-flex">
+                        <p>Localización:</p>
+                        <p>${hotel.Localizacion}</p>
+                    </div>
+                    <div class="d-flex">
+                        <p>Régimen:</p>
+                        <p>${hotel.Régimen}</p>
+                    </div>
+                    <div class="d-flex">
+                        <p>Parking:</p>
+                        <p>${hotel.Parking}</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="text-center"><p><b>Precio Noche: ${hotel.PrecioNoche}</b></p></div>
+                <div class="btn btn-primary w-100 hotelAgregar" id="${hotel.id}">Reservar</div>
+                </div>
+            </div>
+            </div>
+        </div>
+        `;
+    listaResultados.appendChild(cardFiltro);
+});
+});
+
+
+
+                
+                
+                    
+                        
+                        
+                        
+                
