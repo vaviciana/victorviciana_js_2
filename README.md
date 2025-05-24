@@ -1,1 +1,2 @@
 # victorviciana_js_2
+Esta es una web donde puedes ver hoteles, filtrarlos por ubicación, régimen y si tienen parking o no. También puedes comprobar qué fechas están disponibles para reservar y añadirlas a un carrito que se guarda, aunque cierres la página. La galería te deja buscar y filtrar, y la parte de reservas te dice si la fecha está libre y te permite guardarla en tu carrito. Es como un pequeño Booking donde puedes organizar y gestionar tus reservas de forma fácil y clara.
